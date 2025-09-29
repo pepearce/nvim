@@ -51,3 +51,7 @@ require("lazy").setup({
     },
   },
 })
+vim.cmd("highlight Normal guibg=none")
+vim.cmd("highlight NormalNC guibg=none")
+vim.cmd("highlight SignColumn guibg=none")
+vim.cmd("highlight VertSplit guibg=none")

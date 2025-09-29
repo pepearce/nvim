@@ -26,7 +26,6 @@ return {
           "__pycache__",
           "%.DS_Store",
           "venv/",
-          "%.env",
           "dist",
           "build",
           "%.jpg",
@@ -59,6 +58,7 @@ return {
             "rg",
             "--files",
             "--hidden",
+            "--no-ignore",
             "-g",
             "!.git",
             "-g",
@@ -73,6 +73,17 @@ return {
           override_file_sorter = true,
           case_mode = "smart_case",
         },
+      },
+      vimgrep_arguments = {
+        "rg",
+        "--color=never",
+        "--no-heading",
+        "--with-filename",
+        "--line-number",
+        "--column",
+        "--smart-case",
+        "--hidden",
+        "--no-ignore",
       },
     })
 
